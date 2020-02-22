@@ -1,0 +1,48 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EmailSender"
+        xmlns:WpfHtmlEditor="clr-namespace:SpiceLogic.WpfHtmlEditor;assembly=SpiceLogicWPFHtmlEditor" x:Class="EmailSender.MainWindow"
+        mc:Ignorable="d"
+        Title="Email Sender" Height="772" Width="1276" ShowInTaskbar="False" ResizeMode="NoResize" Background="#FF1B1A1A" Foreground="White">
+    <Grid Margin="0,0,-6,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="899*"/>
+            <ColumnDefinition Width="489*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+
+        <WpfHtmlEditor:WpfHtmlEditor x:Name="Html_Editor" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="397,0,0,0" Width="866" Grid.ColumnSpan="2" Height="713"/>
+        <DataGrid x:Name="Group_List" HorizontalAlignment="Left" Height="496" Margin="2,217,0,0" VerticalAlignment="Top" Width="390" SelectionChanged="Group_List_SelectionChanged">
+            <DataGrid.Resources>
+                <Style TargetType="DataGridRow">
+                    <EventSetter Event="KeyDown" Handler="Row_KeyPress"/>
+                </Style>
+            </DataGrid.Resources>
+        </DataGrid>
+        <PasswordBox x:Name="Password_Box" HorizontalAlignment="Left" Margin="158,97,0,0" VerticalAlignment="Top" Width="189" Height="22"/>
+        <TextBox x:Name="Email_Box" HorizontalAlignment="Left" Height="23" Margin="158,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Email Address:" HorizontalAlignment="Left" Margin="40,66,0,0" VerticalAlignment="Top" Foreground="White" Width="92" Height="26"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="40,97,0,0" VerticalAlignment="Top" Foreground="White" Width="92" Height="26"/>
+        <TextBox x:Name="Substitution_String" HorizontalAlignment="Left" Margin="158,126,0,0" VerticalAlignment="Top" Width="189" Height="22"/>
+        <Label Content="Substitution String:" HorizontalAlignment="Left" Margin="40,124,0,0" VerticalAlignment="Top" Foreground="White" Width="123" Height="26"/>
+        <Label Content="Group List" HorizontalAlignment="Left" Margin="2,186,0,0" VerticalAlignment="Top" Foreground="White" Width="98" Height="32" FontSize="16" FontWeight="Bold"/>
+        <Button x:Name="From_CSV" Content="From CSV" HorizontalAlignment="Left" Margin="158,192,0,0" VerticalAlignment="Top" Width="76" Click="From_CSV_Button_Click" Height="20"/>
+        <Button x:Name="Send_Test" Content="Send Test" HorizontalAlignment="Left" Margin="272,25,0,0" VerticalAlignment="Top" Width="75" Click="Send_Test_Button_Click" Height="20"/>
+        <Button x:Name="Send_Emails" Content="Send Emails!" HorizontalAlignment="Left" Margin="158,25,0,0" VerticalAlignment="Top" Width="75" Click="Send_Emails_Button_Click" Height="20"/>
+        <DockPanel HorizontalAlignment="Left" Height="30" LastChildFill="False" VerticalAlignment="Top" Width="1271" Margin="0,713,0,0" Grid.ColumnSpan="2" Background="#FF211E1E">
+            <StatusBar x:Name="StatusBar" Height="30" VerticalAlignment="Top" Width="678" Background="#FF1B1A1A" Foreground="White">
+                <TextBlock x:Name="StatusBarMessage" TextWrapping="Wrap" Text="" Height="24" Width="365"/>
+                <ProgressBar x:Name="Progress_Bar" Height="15" VerticalAlignment="Top" Width="288" Visibility="Visible" RenderTransformOrigin="0.453,-0.35"/>
+            </StatusBar>
+            <TextBlock Height="30" TextWrapping="NoWrap" Text="            Copyright © 2020. Greg Van Aken. Made For the Haverford College 'Ford S-Chords         &#x9;&#x9;" VerticalAlignment="Top" Width="510" DockPanel.Dock="Right"/>
+            <Button x:Name="Help_Button" Content="Help" HorizontalAlignment="Left" VerticalAlignment="Top" Width="67" RenderTransformOrigin="1.561,3.3" DockPanel.Dock="Right" Click="Help_Button_Click"/>
+        </DockPanel>
+        <Image HorizontalAlignment="Left" Height="67" VerticalAlignment="Top" Width="132" Source="/images/Logo_gray.png" Margin="16,-1,0,0"/>
+        <TextBox x:Name="Subject_Box" HorizontalAlignment="Left" Margin="158,157,0,0" VerticalAlignment="Top" Width="189" Height="22"/>
+        <Label Content="Subject:" HorizontalAlignment="Left" Margin="40,155,0,0" VerticalAlignment="Top" Foreground="White" Width="123" Height="26"/>
+        <Button x:Name="Preview" Content="Preview" HorizontalAlignment="Left" Margin="271,192,0,0" VerticalAlignment="Top" Width="76" Click="Preview_Button_Click" Height="20"/>
+    </Grid>
+</Window>
