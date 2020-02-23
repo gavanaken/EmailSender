@@ -127,6 +127,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Icon.ico" />
+    <Content Include="README.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

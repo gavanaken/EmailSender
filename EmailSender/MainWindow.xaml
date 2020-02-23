@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:EmailSender"
         xmlns:WpfHtmlEditor="clr-namespace:SpiceLogic.WpfHtmlEditor;assembly=SpiceLogicWPFHtmlEditor" x:Class="EmailSender.MainWindow"
         mc:Ignorable="d"
-        Title="Email Sender" Height="772" Width="1276" ShowInTaskbar="False" ResizeMode="NoResize" Background="#FF1B1A1A" Foreground="White">
+        Title="Email Sender" Height="772" Width="1276" ResizeMode="CanMinimize" Background="#FF1B1A1A" Foreground="White" Icon="Icon.ico">
     <Grid Margin="0,0,-6,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="899*"/>

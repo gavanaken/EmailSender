@@ -5,16 +5,27 @@ VisualStudioVersion = 16.0.29025.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSender", "EmailSender\EmailSender.csproj", "{D8338BB6-5DE9-43A8-9B0B-5C6951396D5D}"
 EndProject
+Project("{840C416C-B8F3-42BC-B0DD-F6BB14C9F8CB}") = "EmailSender Installer", "EmailSender Installer\EmailSender Installer.aiproj", "{6590C348-79E6-4229-B37B-6E1BDE335544}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		All|Any CPU = All|Any CPU
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8338BB6-5DE9-43A8-9B0B-5C6951396D5D}.All|Any CPU.ActiveCfg = Release|Any CPU
+		{D8338BB6-5DE9-43A8-9B0B-5C6951396D5D}.All|Any CPU.Build.0 = Release|Any CPU
 		{D8338BB6-5DE9-43A8-9B0B-5C6951396D5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D8338BB6-5DE9-43A8-9B0B-5C6951396D5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8338BB6-5DE9-43A8-9B0B-5C6951396D5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8338BB6-5DE9-43A8-9B0B-5C6951396D5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6590C348-79E6-4229-B37B-6E1BDE335544}.All|Any CPU.ActiveCfg = DefaultBuild
+		{6590C348-79E6-4229-B37B-6E1BDE335544}.All|Any CPU.Build.0 = DefaultBuild
+		{6590C348-79E6-4229-B37B-6E1BDE335544}.Debug|Any CPU.ActiveCfg = DefaultBuild
+		{6590C348-79E6-4229-B37B-6E1BDE335544}.Debug|Any CPU.Build.0 = DefaultBuild
+		{6590C348-79E6-4229-B37B-6E1BDE335544}.Release|Any CPU.ActiveCfg = DefaultBuild
+		{6590C348-79E6-4229-B37B-6E1BDE335544}.Release|Any CPU.Build.0 = DefaultBuild
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,3 +1,4 @@
+C:\Users\gavan\source\repos\EmailSender\EmailSender\bin\Release\README.txt
 C:\Users\gavan\source\repos\EmailSender\EmailSender\bin\Release\EmailSender.exe.config
 C:\Users\gavan\source\repos\EmailSender\EmailSender\bin\Release\EmailSender.exe
 C:\Users\gavan\source\repos\EmailSender\EmailSender\bin\Release\EmailSender.pdb
@@ -5,6 +6,7 @@ C:\Users\gavan\source\repos\EmailSender\EmailSender\bin\Release\SpiceLogicWPFHtm
 C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Release\MainWindow.g.cs
 C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Release\PreviewWindow.g.cs
 C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Release\App.g.cs
+C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Release\EmailSender_Content.g.cs
 C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Release\EmailSender_MarkupCompile.cache
 C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Release\EmailSender_MarkupCompile.lref
 C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Release\MainWindow.baml

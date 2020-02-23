@@ -16,3 +16,5 @@ C:\Users\gavan\source\repos\EmailSender\EmailSender\bin\Debug\SpiceLogicWPFHtmlE
 C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Debug\EmailSender.csproj.CopyComplete
 C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Debug\PreviewWindow.g.cs
 C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Debug\PreviewWindow.baml
+C:\Users\gavan\source\repos\EmailSender\EmailSender\bin\Debug\README.txt
+C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Debug\EmailSender_Content.g.cs
