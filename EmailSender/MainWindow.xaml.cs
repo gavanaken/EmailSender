@@ -60,32 +60,40 @@ namespace EmailSender
 
         private void Send_Emails_Button_Click(object sender, RoutedEventArgs e)
         {
-            Progress_Bar.Visibility = Visibility.Visible;
-            Progress_Bar.Maximum = Group_List.Items.Count-1;
-            Progress_Bar.Value = 0;
-            for (int i = 0; i < Group_List.Items.Count; i++)
+            int numGroups = Group_List.Items.Count;
+            MessageBoxResult messageBoxResult = MessageBox.Show("You are about to send whatever is in the " +
+                "canvas to " + (numGroups - 1).ToString() + " recipient(s). There is no going back! " +
+                "Are you sure you want to do this?", "Send Confirmation", MessageBoxButton.YesNo);
+            if (messageBoxResult == MessageBoxResult.Yes)
             {
-                DataGridRow row = (DataGridRow)Group_List.ItemContainerGenerator.ContainerFromIndex(i);
-                row.IsSelected = true;
-                if (row.Item.GetType() != typeof(EmailSender.Group))
-                    continue;
-                Group grp = (Group)row.Item;
-                (int code, string response) = Send_Email(grp.email, GetSubstitutedBody(grp.name));
-                StatusBarMessage.Text = response;
-                switch (code)
+                Progress_Bar.Visibility = Visibility.Visible;
+                Progress_Bar.Maximum = numGroups - 1;
+                Progress_Bar.Value = 0;
+                for (int i = 0; i < numGroups; i++)
                 {
-                    case 0:
-                        break;
-                    case 1:
-                        // Authentication error, stop trying to send emails
-                        return;
-                    case -1:
-                        // Unsure what happened, but keep trying
-                        break;
+                    DataGridRow row = (DataGridRow)Group_List.ItemContainerGenerator.ContainerFromIndex(i);
+                    row.IsSelected = true;
+                    if (row.Item.GetType() != typeof(EmailSender.Group))
+                        continue;
+                    Group grp = (Group)row.Item;
+                    (int code, string response) = Send_Email(grp.email, GetSubstitutedBody(grp.name));
+                    StatusBarMessage.Text = response;
+                    switch (code)
+                    {
+                        case 0:
+                            break;
+                        case 1:
+                            // Authentication error, stop trying to send emails
+                            Progress_Bar.Visibility = Visibility.Hidden;
+                            return;
+                        case -1:
+                            // Unsure what happened, but keep trying
+                            break;
+                    }
+                    DoEvents();
+                    Progress_Bar.Value++;
+                    DoEvents();
                 }
-                DoEvents();
-                Progress_Bar.Value++;
-                DoEvents();
             }
         }
 

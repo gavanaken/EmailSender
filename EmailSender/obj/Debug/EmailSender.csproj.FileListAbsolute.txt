@@ -10,7 +10,6 @@ C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Debug\MainWindow.baml
 C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Debug\EmailSender.g.resources
 C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Debug\EmailSender.Properties.Resources.resources
 C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Debug\EmailSender.csproj.GenerateResource.cache
-C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Debug\EmailSender.csproj.CoreCompileInputs.cache
 C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Debug\EmailSender.exe
 C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Debug\EmailSender.pdb
 C:\Users\gavan\source\repos\EmailSender\EmailSender\bin\Debug\SpiceLogicWPFHtmlEditor.dll

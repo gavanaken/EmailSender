@@ -2,7 +2,6 @@ C:\Users\gavan\source\repos\EmailSender\EmailSender\bin\Release\EmailSender.exe.
 C:\Users\gavan\source\repos\EmailSender\EmailSender\bin\Release\EmailSender.exe
 C:\Users\gavan\source\repos\EmailSender\EmailSender\bin\Release\EmailSender.pdb
 C:\Users\gavan\source\repos\EmailSender\EmailSender\bin\Release\SpiceLogicWPFHtmlEditor.dll
-C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Release\EmailSender.csprojAssemblyReference.cache
 C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Release\MainWindow.g.cs
 C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Release\PreviewWindow.g.cs
 C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Release\App.g.cs
@@ -13,7 +12,6 @@ C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Release\PreviewWindow.ba
 C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Release\EmailSender.g.resources
 C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Release\EmailSender.Properties.Resources.resources
 C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Release\EmailSender.csproj.GenerateResource.cache
-C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Release\EmailSender.csproj.CoreCompileInputs.cache
 C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Release\EmailSender.csproj.CopyComplete
 C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Release\EmailSender.exe
 C:\Users\gavan\source\repos\EmailSender\EmailSender\obj\Release\EmailSender.pdb

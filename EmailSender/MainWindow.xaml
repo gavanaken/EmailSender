@@ -35,7 +35,7 @@
         <DockPanel HorizontalAlignment="Left" Height="30" LastChildFill="False" VerticalAlignment="Top" Width="1271" Margin="0,713,0,0" Grid.ColumnSpan="2" Background="#FF211E1E">
             <StatusBar x:Name="StatusBar" Height="30" VerticalAlignment="Top" Width="678" Background="#FF1B1A1A" Foreground="White">
                 <TextBlock x:Name="StatusBarMessage" TextWrapping="Wrap" Text="" Height="24" Width="365"/>
-                <ProgressBar x:Name="Progress_Bar" Height="15" VerticalAlignment="Top" Width="288" Visibility="Visible" RenderTransformOrigin="0.453,-0.35"/>
+                <ProgressBar x:Name="Progress_Bar" Height="15" VerticalAlignment="Top" Width="288" Visibility="Hidden" RenderTransformOrigin="0.453,-0.35"/>
             </StatusBar>
             <TextBlock Height="30" TextWrapping="NoWrap" Text="            Copyright © 2020. Greg Van Aken. Made For the Haverford College 'Ford S-Chords         &#x9;&#x9;" VerticalAlignment="Top" Width="510" DockPanel.Dock="Right"/>
             <Button x:Name="Help_Button" Content="Help" HorizontalAlignment="Left" VerticalAlignment="Top" Width="67" RenderTransformOrigin="1.561,3.3" DockPanel.Dock="Right" Click="Help_Button_Click"/>
